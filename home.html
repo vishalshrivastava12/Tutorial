@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="projectbootstrap.css" />
+
+    <!-- bootsrap icons -->
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+
+
+    <title>Online Tutor</title>
+
+    <style>
+      #red {
+        background-color: red;
+        height: 500px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- navbar -->
+
+    <nav
+      class="navbar navbar-expand-lg navbar-dark"
+      style="background-color: greenyellow"
+    >
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img src="pic/tutor.png" width="70px" alt="" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Client</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Services
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#">Web Development</a></li>
+                <li>
+                  <a class="dropdown-item" href="#">Android Development</a>
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <li><a class="dropdown-item" href="#">SEO</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact Us</a>
+            </li>
+          </ul>
+          <form class="d-flex">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-light" type="submit">Search</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+
+    <!-- slider -->
+
+    <div
+      id="carouselExampleCaptions"
+      class="carousel slide"
+      data-bs-ride="carousel"
+    >
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="0"
+          class="active"
+          aria-current="true"
+          aria-label="Slide 1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="1"
+          aria-label="Slide 2"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="2"
+          aria-label="Slide 3"
+        ></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <!-- <img src="pic/tutor1.jpg" class="d-block w-100" alt="Responsive image" /> -->
+          <img src="pic/tutor1.jpg" class="rounded mx-auto d-block" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>First slide label</h5>
+            <p>Some representative placeholder content for the first slide.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="pic/tutor2.jpg" class="d-block w-100" alt="Responsive image" />
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Second slide label</h5>
+            <p>Some representative placeholder content for the second slide.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="pic/tutor3.jpg" class="d-block w-100" alt="Responsive image" />
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Third slide label</h5>
+            <p>Some representative placeholder content for the third slide.</p>
+          </div>
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    <div class="container-fluid">
+      <!-- tagline -->
+      <div class="row">
+        <div class="col-12">
+          <h3 class="display-6 text-center mt-5 mb-5" >This is Online Tutorial Website. <br>  You can Learn Many Thing here from different Teacher throught Online <br>
+         
+          </h3>
+        </div>
+      </div>
+
+  <!-- features -->
+
+  <div class="row justify-content-evenly pt-3 pb-3">
+
+  <div class="col-md-3 mt-5 text-center">
+    <h1><i class="bi bi-alarm-fill text-primary"></i> </h1>
+<h5> This is MY Services</h5>
+<p>Hello , my services is great , <br> This is lovely in all of them</p>
+  </div>
+  <div class="col-md-3 mt-5 text-center">
+    <h1> <i class="bi bi-calendar-date text-danger"></i> </h1>
+  <h5>This is for College Work</h5>  
+  <p>Hello , my College is great , <br> This is lovely in all of them</p>
+
+  </div>
+  <div class="col-md-3 mt-5 text-center">
+    <h1> <i class="bi bi-emoji-smile text-success"></i> </h1>
+    <h5>Happy Client</h5>
+    <p>Hello , my Work is great , <br> This is lovely in all of them</p>
+
+    </div>
+
+</div>
+
+<!-- Crete a line in page -->
+<hr>
+    <!-- Container End -->
+    <div class="row justify-content-evenly pt-3 pb-5">
+<div class="col-md-5 mb-5 mt-4">
+  <img src="pic/Growth.jpg" class="img-fluid" alt="">
+
+</div>
+<div class="col-md-5 mt-3 pt-3">
+  <h5 class="mt-3"> Web Development</h5>
+  <div class="progress">
+    <div class="progress-bar bg-success" role="progressbar" style="width: 100%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+  </div>
+<h5 class="mt-3"> SEO</h5>
+  <div class="progress">
+    <div class="progress-bar bg-info" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+  </div>
+<h5 class="mt-3">  Mobile Development</h5>
+  <div class="progress">
+    <div class="progress-bar bg-warning" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+  </div>
+<h5 class="mt-3" > Management</h5>
+  <div class="progress">
+    <div class="progress-bar bg-danger" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+  </div>
+  <h5>Tutorial Teacher</h5>
+  <div class="progress">
+    <div class="progress-bar bg-Primary" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+  </div>
+</div>
+
+    </div>
+
+    <!-- Contact -->
+<div class="row justify-content-evenly pb-5" style="background-color: #f1f1f1;">
+  <div class="col-md-5">
+    <h3 Class="mb-4 mt-3"> Contact Form</h3>
+    <form>
+      <div class="mb-3 mt-5">
+        <label for="name" class="form-label">Full Name</label>
+        <input type="text" class="form-control" id="name">
+       </div>
+      
+      <div class="mb-3">
+        <label for="exampleInputEmail1" class="form-label">Email address</label>
+        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+        <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+      </div>
+      <div class="mb-3">
+        <label for="exampleFormControlTextarea1" class="form-label">Message</label>
+        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+      </div>
+         <button type="submit" class="btn btn-danger">Submit</button>
+    </form>
+  </div>
+  <div class="col-md-5 mt-5">
+    <h3 class="md-4">Address</h3>
+    <p>123445 Colony , Near Any College <br> Lucknow , Uttarpradesh <br>
+      <i class="bi bi-telephone"></i><i class="bi bi-phone"></i>+ 91:7010519650 
+      <br> Email:<i class="bi bi-envelope-open-fill"></i> vishal.beis.12@acharya.ac.in
+
+    </p>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28465.520329233983!2d80.99334028144528!3d26.897463205432715!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399be3ef0f57625f%3A0xf8512eb767b3cf86!2sMunshi%20pulia%20chauraha!5e0!3m2!1sen!2sin!4v1642930314693!5m2!1sen!2sin" style="width: 100%;" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+  </div>
+</div>
+
+
+              <!-- FAQ -->
+
+<div class="row justify-content-evenly pt-5 pb-5">
+  <div class="col-mid-10">
+    <h3 class="text-center pb-4">FAQ</h3>
+    <div class="accordion accordion-flush" id="accordionFlushExample">
+      <div class="accordion-item border">
+        <h2 class="accordion-header" id="flush-headingOne">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+            Accordion Item #1
+          </button>
+        </h2>
+        <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+          <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="flush-headingTwo">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+            Accordion Item #2
+          </button>
+        </h2>
+        <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+          <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine this being filled with some actual content.</div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="flush-headingThree">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+            Accordion Item #3
+          </button>
+        </h2>
+        <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+          <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
+        </div>
+      </div>
+    </div>
+  
+  </div>
+</div>
+
+<!-- footer -->
+<div class="row justify-content-evenly bg-dark text-white pt-2 pb-5">
+
+  <div class="col-md-3" pt-4>
+    <h5 class="pb-2">Vishal Company</h5>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro perspiciatis voluptatum vel at, in dolore! Consequuntur, totam tempora laudantium accusamus vero, error maiores, saepe modi odio numquam autem repellat quae.</p>
+  </div>
+<div class="col-md-3 pt-4">
+  <h5>Important Link</h5>
+  <p>
+    <a href="#" class="link-light text-decortion-none">Home</a><br>
+    <a href="#" class="link-light text-decortion-none">About Us</a><br>
+    <a href="#" class="link-light text-decortion-none">Contact Us</a><br>
+    <a href="#" class="link-light text-decortion-none">Our Team</a><br>
+    <a href="#" class="link-light text-decortion-none">Our Client</a><br>
+
+ 
+  </p>
+</div>
+<div class="col-md-3">
+  <h5 class="pb-2">Contact Us</h5>
+  <p>123445 Colony , Near Any College <br> Lucknow , Uttarpradesh <br>
+    <i class="bi bi-telephone"></i><i class="bi bi-phone"></i>+ 91:7010519650 
+   <br> Email:<i class="bi bi-envelope-open-fill"></i> vishal.beis.12@acharya.ac.in
+  </p>
+
+</div>
+
+
+</div>
+
+<!-- Copyright -->
+
+<div class="row b bg-secondary text-white text-center p-2">
+  <div class="col-12">
+    <p>Copyrigt 2022 by VISHAL . All Right Reserved.</p>
+  </div>
+</div>
+    </div>
+
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>
